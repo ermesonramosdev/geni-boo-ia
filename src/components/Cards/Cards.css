@@ -1,0 +1,27 @@
+.cards__wrapper {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;        
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container-card {
+    display: inline-flex;   
+    flex: 0 0 auto;         
+    width: fit-content;     
+    max-width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid rgb(36, 36, 148);
+    text-align: center;
+    cursor: pointer;
+}
+
+.container-card p {
+    font-weight: bolder;
+}
+
+.container-card p:hover {
+    color: rgb(36, 36, 148);
+}
