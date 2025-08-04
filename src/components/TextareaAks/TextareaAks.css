@@ -1,0 +1,14 @@
+.input__ask {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    background-color: white;
+}
+
+.input__ask::placeholder {
+    color: #999;
+}

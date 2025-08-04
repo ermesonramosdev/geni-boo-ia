@@ -1,0 +1,7 @@
+.container__box__aks {
+    margin: 20px;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}

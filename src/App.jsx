@@ -1,3 +1,4 @@
+import { BoxAks } from './components/BoxAks/BoxAks';
 import { Cards } from './components/Cards/Cards';
 import './global.css';
 function App() {
@@ -16,6 +17,7 @@ function App() {
         ]
       }
       />
+      <BoxAks />
     </div>
   )
 }
