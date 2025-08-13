@@ -1,7 +1,19 @@
 .container__box__aks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
     margin: 20px;
     width: 400px;
     height: 150px;
+    border-radius: 10px;
+    border: 1px solid transparent;
     background-color: white;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container__box__aks:focus-within {
+    border-color: rgb(117, 117, 182);
+    box-shadow: 0 0 8px rgba(117, 117, 182, 0.6);
 }
