@@ -22,7 +22,7 @@ div.container {
     flex-direction: column;
 }
 
-.message-card {
+.message__card {
     display: inline-flex;   
     flex: 0 0 auto;         
     width: fit-content;     
@@ -36,6 +36,6 @@ div.container {
     cursor: pointer;
 }
 
-.message-card p {
+.message__card p {
     font-weight: bolder;
 }

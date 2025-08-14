@@ -4,37 +4,45 @@ import { Cards } from './components/Cards/Cards';
 import './global.css';
 function App() {
 
-  const [messages, setMessages] = useState([]);
+  const [selectCard, setSelectCard] = useState(null);
+
+  const texts = [
+    "Explique este assunto com termos simples",
+    "Faça um resumo",
+    "Dê-me questões para praticar",
+    "Dê exemplos da vida real!"
+  ]
 
   const handleCardClick = (text) => {
-    setMessages((prev) => [...prev, { id: Date.now(), text}]);
+    setSelectCard(text);
   }
 
   return (
 
-    <div className="container">
-      <img src="image/mascote-pea.svg" alt="A Ervilha cientista" width="100px"/>
-
-      <div className="messages">
-        {messages.map((msg) => (
-          <div key={msg.id} className="message-card">
-            <p>{msg.text}</p>
+    <div className="container" style={{  }}>
+      {!selectCard ? (
+        <>
+          <img src="image/mascote-pea.svg" alt="A Ervilha cientista" width="100px"/>
+          <Cards 
+            cardsText={texts}
+            onCardClick={handleCardClick}
+          />
+        </>
+      ) : (
+        <>
+          <div style={{ width: "500px", height: "auto" ,display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+            <img src="image/mascote-pea.svg" alt="A Ervilha cientista" width="60px"/>
+            <div className="messages">
+              <div className="message__card">
+                <p>{selectCard}</p>
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-
-      <Cards 
-      text={[
-          "Explique este assunto com termos simples",
-          "Faça um resumo",
-          "Dê-me questões para praticar",
-          "Dê exemplos da vida real!"
-        ]}
-        onCardClick={handleCardClick}
-      />
-      <BoxAks />
+          <BoxAks />
+        </>
+      )}
     </div>
-  )
+  );
 }
 
 export default App
