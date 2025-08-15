@@ -19,7 +19,7 @@ function App() {
 
   return (
 
-    <div className="container" style={{  }}>
+    <div className="container">
       {!selectCard ? (
         <>
           <img src="image/mascote-pea.svg" alt="A Ervilha cientista" width="100px"/>

@@ -1,9 +1,9 @@
 import './Button.css';
 
-export const ButtonAks = ({icon}) => {
+export const Button = ({ icon, onClick }) => {
     return(
         <div className="container__button__aks">
-            <div className='icon__arrow__up'>{icon}</div>
+            <button type="submit" className='icon__arrow__up' onClick={onClick}>{icon}</button>
         </div>
     );
 }

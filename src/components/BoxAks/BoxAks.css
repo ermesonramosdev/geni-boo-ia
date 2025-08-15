@@ -17,3 +17,33 @@
     border-color: rgb(117, 117, 182);
     box-shadow: 0 0 8px rgba(117, 117, 182, 0.6);
 }
+
+.icon__user {
+    font-size: 40px;
+}
+
+.messages {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;        
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.message__card {
+    display: inline-flex;   
+    flex: 0 0 auto;         
+    width: fit-content;     
+    max-width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid rgb(36, 36, 148);
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.message__card p {
+    font-weight: bolder;
+}

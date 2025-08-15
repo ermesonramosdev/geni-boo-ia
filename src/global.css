@@ -20,6 +20,8 @@ div.container {
     flex-wrap: nowrap;        
     align-items: flex-start;
     flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .message__card {
